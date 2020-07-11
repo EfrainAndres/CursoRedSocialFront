@@ -5,6 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { MomentModule} from 'angular2-moment';
 
+//Modulo custom
+import { MessagesModule } from './messages/messages.module';
+
 //Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -39,7 +42,8 @@ import { FollowedComponent } from './components/followed/followed.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MomentModule
+    MomentModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,6 +24,10 @@ const routes: Routes = [
   {path: 'perfil/:id', component:ProfileComponent},
   {path: 'siguiendo/:id/:page', component:FollowingComponent},
   {path: 'seguidores/:id/:page', component:FollowedComponent},
+  {
+    path: 'mensajes', loadChildren: () =>
+      import('./messages/messages.module').then(m => m.MessagesModule)
+  },
   {path: '**', component: HomeComponent},
 ];
 
